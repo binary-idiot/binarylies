@@ -1,0 +1,13 @@
+{
+	"metalsmith": {
+			"site_name": "binarylies",
+			"stylesheet": "/styles/styles.css"
+	},
+	"layouts": {
+		"engine": "handlebars",
+		"default": "default.hbt",
+		"directory": "./src/layouts",
+		"partials": "./src/layouts/partials",
+		"rename": true
+	}
+}

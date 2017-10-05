@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{site_name}}</title>
+	<link rel="stylesheet" href="{{stylesheet}}">
+</head>
+<body>
+	
