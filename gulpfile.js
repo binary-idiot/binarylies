@@ -20,7 +20,7 @@ const PAGE_DIR  = './src/pages/**';
 
 const BUILD_DIR = './docs';
 
-const config   = JSON.parse(fs.readFileSync('./config.json'));
+const config    = JSON.parse(fs.readFileSync('./config.json'));
 
 //endregion
 

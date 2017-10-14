@@ -1,1 +1,3 @@
-# Welcome to [Binary Lies](http://binarylies.com)!
+## Welcome to BinaryLies
+### The creation and personal playground of a madman known as...
+# [BINARYIDIOT](./about.html "About Me")
