@@ -9,5 +9,13 @@
 		"directory": "./src/layouts",
 		"partials": "./src/layouts/partials",
 		"rename": true
+	},
+	"collections": {
+		"pages":{
+			"sortBy": ":title"
+		}
+	},
+	"permalinks": {
+		"pattern": ":title"
 	}
 }

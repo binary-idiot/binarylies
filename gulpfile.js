@@ -11,6 +11,9 @@ const browserSync = require('browser-sync').create();
 const gulpsmith   = require('gulpsmith');
 const markdown    = require('metalsmith-markdownit');
 const layouts     = require('metalsmith-layouts');
+const collections = require('metalsmith-collections');
+const frontmatter = require('metalsmith-matters');
+const permalinks  = require('metalsmith-permalinks');
 
 //endregion
 
@@ -54,8 +57,11 @@ gulp.task('metalsmith', function(){
 		return gulp.src(PAGE_DIR)
 			.pipe(gulpsmith()
 				.metadata(config.metalsmith)
+				.use(frontmatter())
+				.use(collections(config.collections))
 				.use(markdown())
 				.use(layouts(config.layouts)))
+				.use(permalinks(config.permalinks))
 			.pipe(size())
 			.pipe(gulp.dest(BUILD_DIR))
 			.pipe(browserSync.stream());

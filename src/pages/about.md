@@ -1,3 +1,7 @@
+---
+title: about
+collection: pages
+---
 ## About Me
 
 Hello, my name is **Jonah** but normally on the internet I go by **Binary Idiot**.
