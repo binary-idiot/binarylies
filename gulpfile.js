@@ -18,12 +18,13 @@ const permalinks  = require('metalsmith-permalinks');
 //endregion
 
 //region DIRECTORIES
-const SASS_DIR  = './src/sass/**';
-const PAGE_DIR  = './src/pages/**';
+const SASS_DIR    = './src/sass/**';
+const PAGE_DIR    = './src/pages/**';
+const LAYOUTS_DIR = './src/layouts/**';
 
-const BUILD_DIR = './docs';
+const BUILD_DIR   = './docs';
 
-const config    = JSON.parse(fs.readFileSync('./config.json'));
+const config      = JSON.parse(fs.readFileSync('./config.json'));
 
 //endregion
 
@@ -40,6 +41,7 @@ gulp.task('serve', function(){
 
 	gulp.watch(SASS_DIR, ['sass']);
 	gulp.watch(PAGE_DIR, ['metalsmith']);
+	gulp.watch(LAYOUTS_DIR, ['metalsmith']);
 });
 
 //endregion

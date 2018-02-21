@@ -1,5 +1,5 @@
 ---
-title: about
+title: About
 collection: pages
 ---
 ## About Me

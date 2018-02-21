@@ -1,5 +1,5 @@
 ---
-title: home
+title: Home
 collection: pages
 permalink: false
 ---

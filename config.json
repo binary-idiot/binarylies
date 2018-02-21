@@ -1,7 +1,21 @@
 {
 	"metalsmith": {
 			"site_name": "binarylies",
-			"stylesheet": "/styles/styles.css"
+			"stylesheet": "/styles/styles.css",
+			"social": {
+				"github": {
+					"link": "https://github.com/binary-idiot",
+					"icon": "fa-github-square"
+				},
+				"twitter": {
+					"link": "https://twitter.com/binary_idiot",
+					"icon": "fa-twitter-square"
+				},
+ 				"linkedin": {
+ 					"link": "https://www.linkedin.com/in/jonahmiddleton/",
+ 					"icon": "fa-linkedin"
+ 				}
+			}
 	},
 	"layouts": {
 		"engine": "handlebars",

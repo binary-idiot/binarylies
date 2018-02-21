@@ -1,2 +1,10 @@
+	</main>
+	<footer>
+		<span class="social" id="footer-social">
+		{{#each social}}
+		<a href="{{link}}"><i class="fab {{icon}}"></i></a>
+		{{/each}}
+		</span>
+	</footer>
 </body>
 </html>

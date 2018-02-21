@@ -1,3 +1,26 @@
 body{
-		background-color: lightblue;
+
+	background-color: lightblue;
+	display: grid;
+	grid-template-rows: [top] auto [middle-top] 75% [middle-bottom] auto [bottom];
+	grid-template-columns: [left] auto [middle-left] 75% [middle-right] auto [right];
+
+	main{
+		grid-row: middle-top/middle-bottom;
+		grid-column: middle-left/middle-right;
+	}
+
+	footer{
+		grid-row: middle-bottom;
+		grid-column: left/right;
+		
+		display: grid;
+		grid-template-rows: [top] auto [middle-top] 75% [middle-bottom] auto [bottom];
+		grid-template-columns: [left] auto [middle-left] 75% [middle-right] auto [right];
+
+		#footer-social{
+			grid-row: middle-bottom;
+			grid-column: middle-right;
+		}
+	}
 }
