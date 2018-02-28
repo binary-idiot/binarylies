@@ -7,6 +7,10 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+	<header>
+		<div class="site-name">{{toUpperCase site_name}}</div>
+		<!-- TODO: Add toUpperCase helper for site_name -->
+	</header>
 	<main>
-		<h1>{{this.title}}</h1>
+		
 	

@@ -5,6 +5,23 @@ body{
 	grid-template-rows: [top] auto [middle-top] 75% [middle-bottom] auto [bottom];
 	grid-template-columns: [left] auto [middle-left] 75% [middle-right] auto [right];
 
+	header{
+		grid-row: top;
+		grid-column: left/right;
+		
+		display: grid;
+		grid-template-rows: 4fr 1fr
+		grid-template-columns: repeat(2, 1fr);
+		
+		.site-name{
+			text-align: center;
+			grid-row: 1;
+			grid-column: 1;
+			font-size: 5em;
+			
+		}
+	}
+
 	main{
 		grid-row: middle-top/middle-bottom;
 		grid-column: middle-left/middle-right;
@@ -18,7 +35,7 @@ body{
 		grid-template-rows: [top] auto [middle-top] 75% [middle-bottom] auto [bottom];
 		grid-template-columns: [left] auto [middle-left] 75% [middle-right] auto [right];
 
-		#footer-social{
+		.social{
 			grid-row: middle-bottom;
 			grid-column: middle-right;
 		}

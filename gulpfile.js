@@ -7,6 +7,7 @@ const runSequence = require('run-sequence');
 const fs          = require('fs');
 const del         = require('del');
 const browserSync = require('browser-sync').create();
+const handlebars  = require('handlebars');
 
 const gulpsmith   = require('gulpsmith');
 const markdown    = require('metalsmith-markdownit');
@@ -25,6 +26,13 @@ const LAYOUTS_DIR = './src/layouts/**';
 const BUILD_DIR   = './docs';
 
 const config      = JSON.parse(fs.readFileSync('./config.json'));
+
+//endregion
+
+//region HELPERS
+handlebars.registerHelper('toUpperCase', function(str){
+	return str.toUpperCase();
+});
 
 //endregion
 
