@@ -1,0 +1,13 @@
+footer{
+		grid-row: middle-bottom;
+		grid-column: left/right;
+		
+		display: grid;
+		grid-template-rows: $standard-rows;
+		grid-template-columns: $standard-columns;
+
+		.social{
+			grid-row: middle-bottom;
+			grid-column: middle-right;
+		}
+	}
