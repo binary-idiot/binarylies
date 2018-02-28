@@ -9,7 +9,11 @@
 <body>
 	<header>
 		<div class="site-name">{{toUpperCase site_name}}</div>
-		<!-- TODO: Add toUpperCase helper for site_name -->
+		<nav>
+			{{#each pages}}
+				<a href="/{{path}}">{{title}}</a>
+			{{/each}}
+		</nav>
 	</header>
 	<main>
 		

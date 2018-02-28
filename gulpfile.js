@@ -34,6 +34,10 @@ handlebars.registerHelper('toUpperCase', function(str){
 	return str.toUpperCase();
 });
 
+handlebars.registerHelper('print', function(params){
+	console.log(params);
+});
+
 //endregion
 
 //region TASKS
@@ -70,8 +74,8 @@ gulp.task('metalsmith', function(){
 				.use(frontmatter())
 				.use(collections(config.collections))
 				.use(markdown())
-				.use(layouts(config.layouts)))
 				.use(permalinks(config.permalinks))
+				.use(layouts(config.layouts)))
 			.pipe(size())
 			.pipe(gulp.dest(BUILD_DIR))
 			.pipe(browserSync.stream());

@@ -30,6 +30,13 @@
 		}
 	},
 	"permalinks": {
-		"pattern": ":title"
+		"linksets":[{
+			"match": {"title": "home"},
+			"pattern": "/"
+		},
+		{
+			"match": {"collections": "pages"},
+			"pattern": "/:title"
+		}]
 	}
 }
