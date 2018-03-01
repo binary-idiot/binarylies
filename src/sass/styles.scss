@@ -6,7 +6,7 @@
 
 body{
 
-	background-color: $color-primary-1;
+	background-color: color($color-primary-1);
 	display: grid;
 	grid-template-rows: $standard-rows;
 	grid-template-columns: $standard-columns;
@@ -15,14 +15,14 @@ body{
 		grid-row: middle-top/middle-bottom;
 		grid-column: middle-left/middle-right;
 
-		background-color: $color-white-transparent;
+		background-color: color($color-white);
 		margin-top: 20px;
 		padding:20px;
 		border-radius: 10px;
-		border: 3px solid $color-primary-2;
+		border: 3px solid color($color-primary-2);
 
 		a{
-			color: $color-secondary-1-4;
+			color: color($color-secondary-1-4);
 			text-decoration: none;
 		}
 	}	
