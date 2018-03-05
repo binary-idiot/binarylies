@@ -26,7 +26,8 @@
 	},
 	"collections": {
 		"pages":{
-			"sortBy": ":title"
+			"sortBy": ":title",
+			"reverse": true
 		}
 	},
 	"permalinks": {
